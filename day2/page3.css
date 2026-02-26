@@ -1,0 +1,98 @@
+.parent1{
+    margin-top: 100px;
+    height: 100vh;
+    width: 100%;
+
+    background-color: aquamarine;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+.cont{
+    margin: 5px;
+    background-color: red;
+    border: 2px solid black;
+}
+.c1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.c2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.c3{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.c6{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background:#e9f1f4;
+        }
+
+        .fixed-bar{
+            position:fixed;
+            top:0;
+            width:100%;
+            height:60px;
+            background:#3fb7c4;
+            text-align:center;
+            line-height:60px;
+            font-size:22px;
+            color:black;
+        }
+
+        .container{
+            margin-top:100px;
+            padding:20px;
+        }
+
+        h1{
+            text-align:center;
+            font-size:48px;
+            font-weight:300;
+        }
+
+        .relative-box{
+            position:relative;
+            height:80px;
+            background:#8fd19e;
+            margin:40px 0;
+            top:-70px;
+            text-align:center;
+            line-height:80px;
+            font-size:20px;
+        }
+
+        .absolute-box{
+            position:absolute;
+            right:20px;
+            top:-10px;
+            width:120px;
+            height:100px;
+            background:#e7c46a;
+            text-align:center;
+            line-height:100px;
+            border:2px solid #999;
+        }
+        .static-box{
+            height:80px;
+            background:#9fa4a7;
+            text-align:center;
+            line-height:60px;
+            font-size:20px;
+        }
+
+        .outer{
+            border:2px solid #9aa3a8;
+            padding:20px;
+        }
