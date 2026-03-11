@@ -23,18 +23,11 @@ test('Mouse click and hover', async ({page, context}) => {
     await page.keyboard.down('Enter')
     await page.keyboard.up('Enter')
     
-
-
-
     // await page.locator('//input[@id="email"]').click()
     // await page.keyboard.insertText("abc@gmail.com")
     // await page.locator('//input[@id="password"]').click()
     // await page.keyboard.insertText("abcde@12345")
     // await page.locator('//input[@id="password"]').()
-
-
-    await page.waitForTimeout(5000);
-   
     
-
-}) 
+    await page.waitForTimeout(5000);
+})

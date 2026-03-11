@@ -1,0 +1,29 @@
+import {test,expect} from "@playwright/test";
+
+test("",async({browser})=>{
+    let context=await browser.newContext()
+    let page=await context.newPage()
+    // await page.goto("https://www.myntra.com/shoes?rawQuery=shoes")
+
+    // let page=await context.newPage()
+    await page.goto('https://flipkart.com/');
+    await page.waitForTimeout(5000);
+    const closeBtn = page.getByRole('button', { name: '✕' });
+    if (await closeBtn.isVisible()) {
+        await closeBtn.click();
+    }
+    const searchBox = page.locator('//input[@name="q"]').first();
+    await expect(searchBox).toBeEditable();
+    await searchBox.fill('shoes');
+    await searchBox.press('Enter');
+    let [page2] =await Promise.all([
+        page.waitForEvent('popup'),
+        page.locator('//img[@class="MZeksS"]').first().click()
+    ]);
+    await page2.waitForLoadState();
+    console.log(await page2.url());
+    console.log(await page.url());
+    console.log(page);
+    console.log(page2);
+
+})
