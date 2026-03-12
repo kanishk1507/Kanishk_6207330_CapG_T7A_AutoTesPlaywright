@@ -1,5 +1,5 @@
 import {test,expect} from "@playwright/test";
-import { log } from "node:console";
+
 
 test("",async({browser})=>{
     let context=await browser.newContext()
@@ -36,5 +36,4 @@ test("",async({browser})=>{
     ])
     console.log(page);
     console.log(page2);
-    
 })
