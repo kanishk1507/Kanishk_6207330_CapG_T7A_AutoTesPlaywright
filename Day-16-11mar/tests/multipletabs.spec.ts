@@ -1,11 +1,9 @@
 import {test,expect} from "@playwright/test";
 
-
 test("",async({browser})=>{
     let context=await browser.newContext()
     let page=await context.newPage()
     // await page.goto("https://www.myntra.com/shoes?rawQuery=shoes")
-
     // let page=await context.newPage()
     // await page.goto('https://flipkart.com/');
     // await page.waitForTimeout(5000);
@@ -36,4 +34,6 @@ test("",async({browser})=>{
     ])
     console.log(page);
     console.log(page2);
+
+    
 })
