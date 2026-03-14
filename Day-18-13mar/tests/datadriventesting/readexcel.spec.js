@@ -24,7 +24,6 @@ import path from "path"
 test("Reading test data", async ({ page }) => {
 
     let book = new excel.Workbook();
-
     await book.xlsx.readFile(
         path.join(__dirname, "../../testdata/readexcel.xlsx")
     );
