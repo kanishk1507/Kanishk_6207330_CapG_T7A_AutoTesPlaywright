@@ -16,7 +16,5 @@ test("Notification", async ({ browser }) => {
 
     console.log("Permission status:", result);
 
-    
-
     await page.waitForTimeout(3000);
 });
