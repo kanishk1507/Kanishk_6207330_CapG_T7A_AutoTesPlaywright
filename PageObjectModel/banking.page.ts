@@ -34,7 +34,6 @@ class BankingPage{
 
         this.openAccountTab=page.locator('[ng-click="openAccount()"]')
         
-
         this.fname=page.locator('[ng-model="fName"]')
         this.lname=page.locator('[ng-model="lName"]')
         this.pCode=page.locator('[ng-model="postCd"]')
